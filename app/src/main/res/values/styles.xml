@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Widget.Shrine.CollapsingToolbar" parent="">
+        <!--<item name="collapsedTitleTextAppearance">@style/TextAppearance.Shrine.Logo</item>-->
+        <item name="contentScrim">?attr/colorPrimary</item>
+        <item name="expandedTitleGravity">top</item>
+        <item name="expandedTitleMarginStart">16dp</item>
+        <item name="expandedTitleMarginEnd">16dp</item>
+        <item name="expandedTitleMarginTop">144dp</item>
+        <!--<item name="expandedTitleTextAppearance">@style/TextAppearance.Shrine.Logo</item>-->
+        <item name="scrimVisibleHeightTrigger">140dp</item>
+    </style>
+
+
+    <style name="Widget.Shrine.CollapsingToolbarContent" parent="">
+        <item name="android:paddingLeft">@dimen/md_keylines</item>
+        <item name="android:paddingRight">@dimen/md_keylines</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginTop">176dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AuthTheme" parent="FirebaseUI">
+        <!-- Required for sign-in flow styling -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+    </style>
+
+</resources>

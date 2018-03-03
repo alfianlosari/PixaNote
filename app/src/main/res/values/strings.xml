@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="facebook_application_id" translatable="false">1787348081569523</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1787348081569523</string>
+    <string name="app_name">PixaNote</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="ok">OK</string>
+
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="note_text_extra" translatable="false">note_text</string>
+
+    <string name="latest">Latest</string>
+    <string name="my_note">My Note</string>
+
+    <string name="action_share">Share</string>
+
+    <string name="no_note_selected">No Note Selected</string>
+    <string name="action_logout">Logout</string>
+    <string name="picture_id_key">picture_id_key</string>
+    <string name="item_author" translatable="false">Alfian Losari</string>
+    <string name="item_published" translatable="false">21 September 2017</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="note_image">Note Image</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="favorite_button">Favorite Button</string>
+    <string name="share_button">Share Button</string>
+    <string name="detail">Detail</string>
+</resources>

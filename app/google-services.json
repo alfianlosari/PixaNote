@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "292236950208",
+    "firebase_url": "https://alcuit-c65aa.firebaseio.com",
+    "project_id": "alcuit-c65aa",
+    "storage_bucket": "alcuit-c65aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292236950208:android:4164157471b72c91",
+        "android_client_info": {
+          "package_name": "com.alfianlosari.pixanote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292236950208-vhib1s71k3a9fdg3slqft1o785ttdd02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtIs2N47VhL0R2t1N5eKMUFSM5s7N3zvs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
