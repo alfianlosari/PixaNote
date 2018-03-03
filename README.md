@@ -12,7 +12,7 @@
 1. Import the project to the Android Studio
 2. Run the project on your device or simulator (Device is preferred)
 
-### Usage
+#### Usage
 1. Sign in with your Google or Facebook account
 2. Main Screen consists of 2 main tabs, latest notes from all of the users, and my note that lists only the current authenticated user notes
 3. To add new note, tap on the fab button
