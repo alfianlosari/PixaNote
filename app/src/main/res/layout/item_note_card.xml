@@ -21,7 +21,6 @@
             android:contentDescription="@string/profile_image"
             android:id="@+id/list_avatar"
             android:layout_marginTop="@dimen/md_keylines"
-            android:layout_marginLeft="@dimen/md_keylines"
             android:layout_marginStart="@dimen/md_keylines"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -34,8 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/md_keylines"
             android:layout_marginStart="@dimen/md_keylines"
-            android:layout_marginLeft="@dimen/md_keylines"
-            android:layout_toRightOf="@+id/list_avatar"
+            android:layout_toEndOf="@+id/list_avatar"
             android:textAppearance="?attr/textAppearanceListItem"
             android:textSize="@dimen/article_subheading"
             tools:text="@string/item_author" />
@@ -46,8 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/author"
             android:layout_marginStart="@dimen/md_keylines"
-            android:layout_marginLeft="@dimen/md_keylines"
-            android:layout_toRightOf="@+id/list_avatar"
+            android:layout_toEndOf="@+id/list_avatar"
             android:ellipsize="end"
             android:singleLine="true"
             android:textAppearance="?attr/textAppearanceListItem"
@@ -103,10 +100,9 @@
             android:layout_width="@dimen/cards_button_width"
             android:layout_height="@dimen/cards_button_height"
             android:layout_marginEnd="@dimen/md_keylines"
-            android:layout_marginRight="@dimen/md_keylines"
             app:srcCompat="@drawable/ic_share"
             android:layout_below="@+id/card_text"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             style="?android:attr/borderlessButtonStyle"
             android:tint="@color/colorPrimary" />
 
@@ -116,10 +112,9 @@
             android:layout_width="@dimen/cards_button_width"
             android:layout_height="@dimen/cards_button_height"
             android:layout_marginEnd="@dimen/md_keylines"
-            android:layout_marginRight="@dimen/md_keylines"
             app:srcCompat="@drawable/ic_favorite"
             android:layout_below="@+id/card_text"
-            android:layout_toLeftOf="@id/share_button"
+            android:layout_toStartOf="@id/share_button"
             style="?android:attr/borderlessButtonStyle"
             android:tint="@color/button_grey" />
 

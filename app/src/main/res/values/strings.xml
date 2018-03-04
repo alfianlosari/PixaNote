@@ -8,7 +8,6 @@
 
     <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
     <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
-    <string name="note_text_extra" translatable="false">note_text</string>
 
     <string name="latest">Latest</string>
     <string name="my_note">My Note</string>
@@ -20,11 +19,24 @@
     <string name="picture_id_key">picture_id_key</string>
     <string name="item_author" translatable="false">Alfian Losari</string>
     <string name="item_published" translatable="false">21 September 2017</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
     <string name="note_image">Note Image</string>
     <string name="profile_image">Profile Image</string>
     <string name="favorite_button">Favorite Button</string>
     <string name="share_button">Share Button</string>
     <string name="detail">Detail</string>
+    <string name="login_error">Failed to login</string>
+    <string name="user_is_not_signed_in">User is not signed in</string>
+    <string name="upload_failed">Failed to upload</string>
+    <string name="failed_to_write">Failed to write</string>
+    <string name="uploading_note">Uploading Note</string>
+    <string name="processing_image_to_text">Processing image to text</string>
+    <string name="no_text_is_available">No text is available</string>
+    <string name="add_note">Add Note</string>
+    <string name="snap_picture">Snap Picture</string>
+    <string name="upload_note">Upload Note</string>
+    <plurals name="likes">
+        <item quantity="one">Like %d</item>
+        <item quantity="few">Likes %d</item>
+        <item quantity="other">Likes %d</item>
+    </plurals>
 </resources>

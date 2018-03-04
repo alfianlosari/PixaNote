@@ -2,10 +2,7 @@ package com.alfianlosari.pixanote.adapter;
 
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.ImageViewCompat;
 import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,12 +15,8 @@ import android.widget.TextView;
 import com.alfianlosari.pixanote.R;
 import com.alfianlosari.pixanote.model.NotePix;
 import com.alfianlosari.pixanote.utils.DateUtils;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
-
-import org.w3c.dom.Text;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -56,8 +49,7 @@ public class NotePicsFirebaseRecyclerViewAdapter extends RecyclerView.Adapter<No
     public NotePixViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.item_note_card, parent, false);
-        NotePixViewHolder viewHolder = new NotePixViewHolder(view);
-        return viewHolder;
+        return new NotePixViewHolder(view);
     }
 
     @Override

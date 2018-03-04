@@ -12,7 +12,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -34,7 +33,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -52,7 +50,6 @@ public class SnapActivity extends AppCompatActivity {
     ProgressBar mProgressBar;
     FloatingActionButton mCameraFab;
     FloatingActionButton mUploadFab;
-    public final String SNAP_FRAGMENT_TAG = "SNAP_FRAGMENT_TAG";
     public final String PREVIEW_FRAGMENT_TAG = "PREVIEW_FRAGMENT_TAG";
 
 
@@ -119,10 +116,10 @@ public class SnapActivity extends AppCompatActivity {
         if (snapFragment != null) {
             final String text = snapFragment.getDetectorProcessor().mDetectedText;
             if (TextUtils.isEmpty(text)) {
-                Snackbar.make(mRootView, "No Text is available", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(mRootView, getString(R.string.no_text_is_available), Snackbar.LENGTH_SHORT).show();
             } else {
                 final ProgressDialog progressDialog = new ProgressDialog(this);
-                progressDialog.setMessage("Processing Image to Text");
+                progressDialog.setMessage(getString(R.string.processing_image_to_text));
                 progressDialog.setCancelable(false);
                 progressDialog.show();
                 snapFragment.getCameraSource().takePicture(new CameraSource.ShutterCallback() {
@@ -177,7 +174,7 @@ public class SnapActivity extends AppCompatActivity {
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
             if (user == null) {
-                Toast.makeText(this, "user is not signed in", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.user_is_not_signed_in), Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -194,7 +191,7 @@ public class SnapActivity extends AppCompatActivity {
 
             final ProgressDialog horizontalProgressDialog = new ProgressDialog(this);
             horizontalProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-            horizontalProgressDialog.setMessage("Uploading Note");
+            horizontalProgressDialog.setMessage(getString(R.string.uploading_note));
             horizontalProgressDialog.setCancelable(false);
             horizontalProgressDialog.setMax(100);
             horizontalProgressDialog.show();
@@ -211,7 +208,7 @@ public class SnapActivity extends AppCompatActivity {
                 @Override
                 public void onFailure(@NonNull Exception e) {
                     horizontalProgressDialog.dismiss();
-                    Snackbar.make(mRootView, "Failed Upload" + e.getMessage(), Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(mRootView, getString(R.string.upload_failed) + e.getMessage(), Snackbar.LENGTH_SHORT).show();
 
                 }
             }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -240,7 +237,7 @@ public class SnapActivity extends AppCompatActivity {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
                                     horizontalProgressDialog.dismiss();
-                                    Snackbar.make(mRootView, "Failed write" + e.getMessage(), Snackbar.LENGTH_SHORT).show();
+                                    Snackbar.make(mRootView, getString(R.string.failed_to_write) + e.getMessage(), Snackbar.LENGTH_SHORT).show();
 
                                 }
                             }).addOnSuccessListener(new OnSuccessListener<Void>() {

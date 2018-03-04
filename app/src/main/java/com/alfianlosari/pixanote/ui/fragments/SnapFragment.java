@@ -2,7 +2,6 @@ package com.alfianlosari.pixanote.ui.fragments;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -11,7 +10,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -71,8 +69,7 @@ public class SnapFragment extends Fragment {
     }
 
     public static SnapFragment newInstance() {
-        SnapFragment fragment = new SnapFragment();
-        return fragment;
+        return new SnapFragment();
     }
 
     private AppCompatActivity getCompactActivity() {

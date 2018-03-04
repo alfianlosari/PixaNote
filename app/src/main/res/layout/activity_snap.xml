@@ -15,6 +15,7 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
+        android:contentDescription="@string/snap_picture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
@@ -24,6 +25,7 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/cloud_fab"
+        android:contentDescription="@string/upload_note"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +33,6 @@
         android:layout_marginBottom="16dp"
         android:src="@drawable/ic_check"
         android:onClick="onFabClicked"/>
-
 
     <ProgressBar
         android:id="@+id/progress_bar"

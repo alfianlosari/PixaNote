@@ -96,14 +96,14 @@ public class AuthenticationActivity extends AppCompatActivity {
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             mProgressBar.setVisibility(View.GONE);
-                            Toast.makeText(AuthenticationActivity.this, "Login error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AuthenticationActivity.this, getString(R.string.login_error), Toast.LENGTH_SHORT).show();
                             signOut();
                             signIn();
                         }
                     });
 
         } else {
-            Toast.makeText(this, "Login error", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.login_error), Toast.LENGTH_SHORT).show();
             signIn();
 
         }

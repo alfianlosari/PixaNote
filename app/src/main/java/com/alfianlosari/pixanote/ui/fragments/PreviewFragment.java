@@ -23,8 +23,6 @@ public class PreviewFragment extends Fragment {
     private static final String NOTE_TEXT_KEY = "NOTE_TEXT_KEY";
     private static final String NOTE_IMAGE_DATA = "NOTE_IMAGE_DATA";
 
-    public PreviewFragment() {}
-
     public Bitmap getBitmap() {
         return mBitmap;
     }

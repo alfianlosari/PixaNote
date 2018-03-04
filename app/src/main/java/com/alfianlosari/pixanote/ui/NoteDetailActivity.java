@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.widget.NestedScrollView;
@@ -15,7 +14,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.alfianlosari.pixanote.R;
@@ -192,7 +190,7 @@ public class NoteDetailActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 likeCount = (Long) dataSnapshot.getValue();
-                mLikeText.setText("Like " + likeCount);
+                mLikeText.setText(getResources().getQuantityString(R.plurals.likes, (int) likeCount, (int) likeCount));
 
             }
 

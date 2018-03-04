@@ -5,13 +5,10 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.widget.RemoteViews;
 
 import com.alfianlosari.pixanote.R;
 import com.alfianlosari.pixanote.service.NoteListWidgetService;
-import com.squareup.picasso.Picasso;
 
 /**
  * Implementation of App Widget functionality.
